@@ -41,6 +41,8 @@ manifest:
       url-base: https://github.com/boschsensortec
     - name: eembc
       url-base: https://github.com/eembc
+    - name: vegard
+      url-base: https://github.com/vegu-nordic
 
   # If not otherwise specified, the projects below should be obtained
   # from the ncs remote.
@@ -63,7 +65,8 @@ manifest:
     # https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/guides/modules.html
     - name: zephyr
       repo-path: sdk-zephyr
-      revision: 41f8c5fedeeb7b5789345c5f730809a07ecadb51
+      remote: vegard
+      revision: tests/54l15_uart_fixes
       import:
         # In addition to the zephyr repository itself, NCS also
         # imports the contents of zephyr/west.yml at the above
